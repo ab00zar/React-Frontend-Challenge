@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
+import Comment from './Comment'
 
 class Comments extends Component{
     render(){
+        const { commentData } = this.props
+
         return(
-            <div>
-                <h3>Author</h3>
-                <p>Comment text will go here!</p>
-            </div>
+            <Comment commentData={commentData} />
         )
     }
 }
