@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Comments from './Comments'
 import Form from './Form'
+import Header from './Header'
 
 class App extends Component {
   state = {
@@ -17,6 +18,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Header />
         <Comments commentData={comments} />
         <Form handleSubmit={this.handleSubmit} />
       </div>
