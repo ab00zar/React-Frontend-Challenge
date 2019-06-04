@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
 import Comments from './Comments'
+import Form from './Form'
 
 class App extends Component {
+  state = {
+    comments: [],
+  }
+
+  handleSubmit = comment => {
+    this.setState({ comments: [...this.state.comments, comment] })
+  }
+
   render(){
-    const comments = [
-      {
-        name: 'Charlie',
-        comment: 'sample comment text 1',
-      },
-      {
-        name: 'Mac',
-        comment: 'sample comment text 2',
-      },
-      {
-        name: 'Dee',
-        comment: 'sample comment text 3',
-      },
-      {
-        name: 'Dennis',
-        comment: 'sample comment text 4',
-      },
-    ]
+    const { comments } = this.state;
 
     return (
       <div className="App">
         <Comments commentData={comments} />
+        <Form handleSubmit={this.handleSubmit} />
       </div>
     );
   }
