@@ -17,7 +17,7 @@ class App extends Component {
     const { comments } = this.state;
 
     return (
-      <div className="App">
+      <div className="App col-md-4 offset-md-4">
         <Header />
         <Comments commentData={comments} />
         <Form handleSubmit={this.handleSubmit} />
