@@ -1,3 +1,10 @@
+## React Frontend Challenge
+
+This is a simple comment form developed by ReactJS. The project is deployed here:
+https://ab00zar.github.io/React-Frontend-Challenge
+
+It's possible to add comments and remove them.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
