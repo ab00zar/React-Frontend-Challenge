@@ -16,7 +16,9 @@ code {
   background-color: #272A42; 
   height: 50px;
 }
-
+.logo{
+  height: 85%;
+}
 /* Each Comment Style */
 .comment {
   border: 1px solid;
@@ -32,6 +34,10 @@ code {
 .comment p {
   text-align: left;
   margin-left: 10px;
+}
+
+.close{
+  margin-right: 10px;
 }
 
 /* Form Style */

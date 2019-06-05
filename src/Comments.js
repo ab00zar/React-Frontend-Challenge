@@ -3,10 +3,10 @@ import Comment from './Comment'
 
 class Comments extends Component{
     render(){
-        const { commentData } = this.props
+        const { commentData, removeComment } = this.props
 
         return(
-            <Comment commentData={commentData} />
+            <Comment commentData={commentData} removeComment={removeComment} />
         )
     }
 }

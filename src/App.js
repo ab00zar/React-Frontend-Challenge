@@ -13,13 +13,23 @@ class App extends Component {
     this.setState({ comments: [...this.state.comments, comment] })
   }
 
+  removeComment = index => {
+    const { comments } = this.state;
+
+    this.setState({
+        comments: comments.filter((comment, i) => { 
+            return i !== index;
+        })
+    });
+  }
+
   render(){
     const { comments } = this.state;
 
     return (
       <div className="App col-md-4 offset-md-4">
         <Header />
-        <Comments commentData={comments} />
+        <Comments commentData={comments} removeComment={this.removeComment} />
         <Form handleSubmit={this.handleSubmit} />
       </div>
     );
