@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Frontend-Challenge/static/css/main.a6376c74.chunk.css",
+    "main.js": "/React-Frontend-Challenge/static/js/main.c59eb1d9.chunk.js",
+    "main.js.map": "/React-Frontend-Challenge/static/js/main.c59eb1d9.chunk.js.map",
+    "runtime~main.js": "/React-Frontend-Challenge/static/js/runtime~main.1e7f8488.js",
+    "runtime~main.js.map": "/React-Frontend-Challenge/static/js/runtime~main.1e7f8488.js.map",
+    "static/js/2.b85fd010.chunk.js": "/React-Frontend-Challenge/static/js/2.b85fd010.chunk.js",
+    "static/js/2.b85fd010.chunk.js.map": "/React-Frontend-Challenge/static/js/2.b85fd010.chunk.js.map",
+    "index.html": "/React-Frontend-Challenge/index.html",
+    "precache-manifest.8bc1c9ee26725cd16eccfd55ad7fefbc.js": "/React-Frontend-Challenge/precache-manifest.8bc1c9ee26725cd16eccfd55ad7fefbc.js",
+    "service-worker.js": "/React-Frontend-Challenge/service-worker.js",
+    "static/css/main.a6376c74.chunk.css.map": "/React-Frontend-Challenge/static/css/main.a6376c74.chunk.css.map"
+  }
+}
