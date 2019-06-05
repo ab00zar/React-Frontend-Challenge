@@ -33,3 +33,19 @@ code {
   text-align: left;
   margin-left: 10px;
 }
+
+/* Form Style */
+.form {
+  background-color: #F5F7FA;
+}
+
+.mybtn {
+  margin-bottom: 10px;
+  background-color: #337AB7;
+  color: #fff;
+}
+
+.form-title {
+  font-size: 24px;
+  text-align: left;
+}

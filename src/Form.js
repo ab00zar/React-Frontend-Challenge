@@ -32,23 +32,30 @@ class Form extends Component {
         const { name, comment } = this.state; 
 
         return (
-            <form onSubmit={this.onFormSubmit}>
-                <label>Name</label>
-                <input 
-                    type="text" 
-                    name="name" 
-                    value={name} 
-                    onChange={this.handleChange} />
-                <label>Comment</label>
-                <input 
-                    type="text" 
-                    name="comment" 
-                    value={comment} 
-                    onChange={this.handleChange} />
-                <button type="submit">
-                    Submit
-                </button>
-            </form>
+            <div className="form">
+                <form onSubmit={this.onFormSubmit} className="container">
+                    <div className="form-title">Post a comment</div>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        value={name}
+                        placeholder="Your name" 
+                        className="form-control"
+                        onChange={this.handleChange} />
+                    <br/>
+                    <input 
+                        type="text" 
+                        name="comment" 
+                        value={comment} 
+                        placeholder="Say something ..."
+                        className="form-control"
+                        onChange={this.handleChange} />
+                    <br/>
+                    <button type="submit" className="btn mybtn">
+                        Post
+                    </button>
+                </form>
+            </div>
         );
     }
 
