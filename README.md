@@ -7,69 +7,63 @@ It's possible to add comments and remove them.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Challenge
 
-In the project directory, you can run:
+## Guidelines
 
-### `npm start`
+Chez Octoly, on aime beaucoup le Javascript et on adore les jolies interfaces responsives et cross-browsers.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Vous êtes libre dans vos choix de technologies.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Pour info, chez Octoly on utilise les technos suivantes:
+* React (https://facebook.github.io/react/)
+* jQuery (http://jquery.com/)
+* Bootstrap (http://getbootstrap.com/)
+* SASS (http://sass-lang.com/)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Les règles du jeu :
+Intégrer la page de commentaires suivante:
 
-### `npm run build`
+![comments](./images/comments.jpg)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Voici ce que doit contenir la page (dans l'ordre d'affichage des éléments):
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* Le titre "Comments" avec à côté le nombre de commentaires affichés
+* La liste des commentaires
+  * Pour chaque commentaire on affiche l'auteur du commentaire et le texte associé
+* Le formulaire pour poster un commentaire
+  * Le titre "Post a comment" 
+  * Un champ texte pour rentrer le nom de l'auteur
+  * Un champ texte pour rentrer le text du commentaire
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+À la racine de ce projet vous trouverez un fichier JSON comments.json que vous devrez utiliser pour charger les commentaires existants.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Évènements:
+* Validation du formulaire:
+  * création d'un nouveau commentaire qui est ajouté à la suite de la liste des commentaires existants
+  * le décompte des commentaires (à droite du titre "Comments") est mis à jour
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Attention** : On ne peut pas poster de commentaire si le champ auteur et/ou commentaire est vide.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Design
+Il vous faudra respecter les contraintes suivantes:
+* Le texte par défaut: font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; color: #333;
+* la couleur de fond du header: #272A42
+* la hauteur du header: 50px
+* la couleur de fond du formulaire: #F5F7FA
+* La couleur des boutons: #337AB7
+* La taille des titres: 24px
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Vous trouverez le logo Octoly dans le repertoire images.
 
-## Learn More
+Il faut que la page soit jolie sur toutes les tailles d'écran et sur tous les browsers récents (Firefox, Chrome, Safari, Internet Explorer 11).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### bonus
+* Rendre les commentaires persitents grâce au local storage (http://www.w3schools.com/HTML/html5_webstorage.asp)
+* Pouvoir supprimer/editer les commentaires
+* Tester votre code (ie: https://jasmine.github.io/2.4/introduction.html)
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Have fun !
